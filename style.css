@@ -1,0 +1,89 @@
+:root{
+    --primary: #;
+    --secondary:  #;
+    --paragrafs:#;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*Mobile first*/
+.nav{
+
+    border-bottom: 1px solid #808080;
+}
+
+/*positions the mobile navigation icon*/
+.nav_toggle{
+    border: aqua solid;
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0rem;
+    
+}
+
+img svg{
+    width: 1.5rem;
+
+}
+
+
+.close{
+    display: none;
+}
+
+/*nav Menu begins here*/
+.nav_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 16px;
+}
+
+li{
+    list-style: none;
+    display: none;
+    
+}
+
+/*logo*/
+:first-child{
+    margin-right: auto;
+    display: block;
+}
+
+.nav_checkbox{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+/*logo*/
+img{
+    width: 1.5rem
+}
+
+/*interaction of the nav_menu icon using checkbox*/
+#nav_checkbox:checked ~ ul.nav_menu li{
+    display: block;
+
+}
+/* close icon display*/
+#nav_checkbox:checked ~ label.nav_toggle .close{
+    display:block;
+}
+/*hide the menu icon*/
+#nav_checkbox:checked ~ label.nav_toggle img{
+    display: none;
+}
+
+
