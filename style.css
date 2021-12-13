@@ -86,16 +86,14 @@ img{
     display: none;
 }
 
-@media (min-width: 560px) {
-    .nav{
-        display: none;
-
-    }
+@media only screen and (min-width: 560px) {
+    
     .nav_toggle{
         display: none;
 
     }
     .nav_menu{
+        display: flex;
         flex-direction: row;
     }
     li{
