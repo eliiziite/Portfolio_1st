@@ -86,4 +86,20 @@ img{
     display: none;
 }
 
+@media (min-width: 560px) {
+    .nav{
+        display: none;
+
+    }
+    .nav_toggle{
+        display: none;
+
+    }
+    .nav_menu{
+        flex-direction: row;
+    }
+    li{
+        display: block;
+    }
+}
 
