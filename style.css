@@ -1,6 +1,6 @@
 :root{
     --primary: #;
-    --secondary:  #;
+    --secondary: #; /*About page*/
     --paragrafs:#;
 }
 
@@ -8,6 +8,19 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.logo{
+    width: 50%;
 }
 
 /*Mobile first*/
@@ -87,7 +100,7 @@ img{
 }
 
 @media only screen and (min-width: 560px) {
-    
+
     .nav_toggle{
         display: none;
 
