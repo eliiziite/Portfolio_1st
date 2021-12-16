@@ -19,14 +19,7 @@ h2{
     font-weight: bold;
 }
 
-.about_img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-    max-height: 50%;
-    
-}
+
 
 /*Mobile first*/
 .nav{
@@ -44,6 +37,7 @@ h2{
     
 }
 
+/*icons for nav*/
 img svg{
     width: 1.5rem;
 
@@ -56,16 +50,19 @@ img svg{
 
 /*nav Menu begins here*/
 .nav_menu{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin: 16px;
+
 }
 
 li{
     list-style: none;
     display: none;
+    font-weight: bold;
     
 }
 
@@ -74,6 +71,7 @@ li{
     margin-right: auto;
     display: block;
 }
+
 
 .nav_checkbox{
     display: none;
@@ -84,11 +82,13 @@ a{
     color: inherit;
     font-size: 20px;
 }
-
-/*logo*/
+/*(nav icon)
 img{
     width: 1.5rem
 }
+*/
+
+/*here begins my responsive navigatin*/
 
 /*interaction of the nav_menu icon using checkbox*/
 #nav_checkbox:checked ~ ul.nav_menu li{
@@ -103,6 +103,39 @@ img{
 #nav_checkbox:checked ~ label.nav_toggle img{
     display: none;
 }
+/*here ends my responsive navigation*/
+
+/*here begins ABOUT ME page*/
+
+.about_img{
+    display: block;
+    margin: auto;
+    padding: 48px;
+    width: 100%;
+    max-width: 60%;
+    
+}
+/*text under picture*/
+.container{
+    display: block;
+    
+    max-width: 60%;
+
+    margin: auto; 
+}
+
+.contact{
+    display: block;
+    margin: auto;
+    max-width: 60%;
+}
+.contact_content h2 {
+    text-align: center;
+    padding-top: 48px;
+}
+.contact_content p {
+    text-align: center;
+}
 
 @media only screen and (min-width: 560px) {
 
@@ -113,9 +146,15 @@ img{
     .nav_menu{
         display: flex;
         flex-direction: row;
+        
+        padding-right: 16px;
     }
     li{
         display: block;
+    }
+
+    .about_img{
+        justify-content: right;
     }
 }
 
