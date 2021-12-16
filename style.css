@@ -5,6 +5,7 @@
 }
 
 body{
+    text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,6 +18,11 @@ p{
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
 }
 
 
@@ -140,14 +146,17 @@ img{
 
 /*here begins FOOTER*/
 
-.footer{
+footer{
     padding-top: 48px;
 }
 .footer_logo{
     float: left;
     width: 30%;
     max-width:30%;
+    margin-left: 15px;
+    padding-left: 50px;
 }
+/*need to check this out, something wrong with margin and padding*/
 .footer_content{
     display: table-column;
     
@@ -161,6 +170,23 @@ img{
 .copyright{
     display: block;
 }
+
+/*Dance*/
+.headings{
+    padding: 48px;
+}
+.description_text{
+    display: column;
+    max-width: 50%;
+    padding-bottom: 48px;
+    margin: 20px 20px;
+    border: orangered;
+    
+    
+    
+}
+
+
 
 
 /*.footer_logo{
@@ -188,6 +214,8 @@ flex end, this works when i put img and first section in footer_content and the 
 
 
 
+
+
 @media only screen and (min-width: 560px) {
 
     .nav_toggle{
@@ -207,5 +235,39 @@ flex end, this works when i put img and first section in footer_content and the 
     .about_img{
         justify-content: right;
     }
+    /*footer*/
+    .footer_content{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        padding-bottom: 50px;
+        gap: 25px;
+    }
+    /* need to fix footer for desktop*/
+    .copyright{
+        display: block;
+    }
+
+    /*Dance*/
+.headings{
+    padding: 48px;
+}
+.description{
+    border: #87629A solid;
+    padding: 100px 0;
+}
+.description_text{
+    width: 80%;
+    max-width: 2000px;
+
+    display: flex;
+
+    margin: 0 auto;
+    gap: 40px;
+    border: orangered;
+}
+   
+    
+
 }
 
