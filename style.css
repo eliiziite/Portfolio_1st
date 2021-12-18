@@ -35,7 +35,6 @@ h1{
 
 /*positions the mobile navigation icon*/
 .nav_toggle{
-    border: aqua solid;
     position: absolute;
     cursor: pointer;
     margin: 0rem 1rem;
@@ -162,8 +161,8 @@ footer{
     
     width: 40%;
     max-width: 40%;
-    padding-right: 50px;
-    margin-right: 15px;
+    padding: 0 50px;
+    margin: 0 15px;
     float: right;
 
 }
@@ -175,16 +174,38 @@ footer{
 .headings{
     padding: 48px;
 }
-.description_text{
-    display: column;
-    max-width: 50%;
-    padding-bottom: 48px;
-    margin: 20px 20px;
-    border: orangered;
-    
-    
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.col_text{
+    width: 80%;
+    max-width: 40%;
+    margin: 25px 25px;
+    text-align: center;
+}
+
+.col_picture{
+    width: 80%;
+    max-width: 40%;
+    margin: 25px 25px;
     
 }
+/*
+.description_text{
+    display:flex;
+    width:200px;
+    margin:0 25px 25px;
+     
+}
+.description_picture{
+    display:inline-block;
+    width:200px;
+    margin:0 25px 25px;
+}
+*/
 
 
 
@@ -249,23 +270,32 @@ flex end, this works when i put img and first section in footer_content and the 
     }
 
     /*Dance*/
-.headings{
-    padding: 48px;
-}
-.description{
-    border: #87629A solid;
-    padding: 100px 0;
-}
-.description_text{
-    width: 80%;
-    max-width: 2000px;
+    .headings{
+        padding: 48px;
+    } 
 
-    display: flex;
 
-    margin: 0 auto;
-    gap: 40px;
-    border: orangered;
-}
+    /*collumns*/  
+    /*
+    .description{
+        border: #87629A solid;
+        padding: 100px 0;
+    }
+
+    .description_text{
+        width: 80%;
+        max-width: 2000px;
+        
+        display: flex;
+
+        margin: 0 auto;
+        gap: 40px;
+        border: orangered;
+    }
+    */
+
+    
+    
    
     
 
