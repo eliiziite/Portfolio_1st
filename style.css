@@ -18,11 +18,13 @@ p{
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    font-size: 24px;
 }
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
+    font-size: 24px;
 }
 
 
@@ -118,20 +120,27 @@ img{
     padding: 48px;
     width: 100%;
     max-width: 60%;
+    text-align: center;
     
 }
 /*text under picture*/
 .container{
     display: block;
-    
+    width: 100%;
     max-width: 60%;
 
     margin: auto; 
 }
+.content{
+    
+    
+    text-align: left;
+    width: 100%;
+}
 
 .contact{
     display: block;
-    margin: auto;
+    margin: auto auto;
     max-width: 60%;
 }
 .contact_content h2 {
@@ -146,11 +155,11 @@ img{
 /*here begins FOOTER*/
 
 footer{
-    padding-top: 48px;
+    padding-top: 60px;
 }
 .footer_logo{
     float: left;
-    width: 30%;
+    width: 100%;
     max-width:30%;
     margin-left: 15px;
     padding-left: 50px;
@@ -159,7 +168,7 @@ footer{
 .footer_content{
     display: table-column;
     
-    width: 40%;
+    width: 100%;
     max-width: 40%;
     padding: 0 50px;
     margin: 0 15px;
@@ -173,6 +182,7 @@ footer{
 /*Dance*/
 .headings{
     padding: 48px;
+    text-align: left;
 }
 .projects{
     display: flex;
@@ -181,14 +191,14 @@ footer{
     text-align: center;
 }
 .col_text{
-    width: 80%;
+    width: 400px;
     max-width: 40%;
     margin: 25px 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .col_picture{
-    width: 80%;
+    width: 400px;
     max-width: 40%;
     margin: 25px 25px;
     
@@ -233,8 +243,54 @@ footer{
 }
 flex end, this works when i put img and first section in footer_content and the 2 section in seperate part footer_content_2*/
 
+/*index*/
+.wrapper{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
 
-
+.hero_text{
+    padding: 48px;
+    text-align: left;
+}
+.hero_text h2{
+    font-size: 50px;
+    
+}
+.content_project{
+    border: blue;
+    padding-top: 48px;
+    
+}
+.about_pj{
+    display: block;
+    margin: auto;
+    
+    width: 100%;
+    max-width: 40%;
+    
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    
+    color: #70223E;
+    
+    background-color: #EF4786;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
 
 
 @media only screen and (min-width: 560px) {
@@ -293,6 +349,10 @@ flex end, this works when i put img and first section in footer_content and the 
         border: orangered;
     }
     */
+    .btn:hover,
+    .btn:focus {
+    opacity: .75; 
+}
 
     
     
