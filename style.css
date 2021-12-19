@@ -77,6 +77,11 @@ li{
 :first-child{
     margin-right: auto;
     display: block;
+    
+}
+.logo{
+    width: 100%;
+    max-width:30%;
 }
 
 
@@ -179,7 +184,7 @@ footer{
     display: block;
 }
 
-/*Dance*/
+/*Project pages*/
 .headings{
     padding: 48px;
     text-align: left;
@@ -191,8 +196,14 @@ footer{
 .columns img{
     margin: 15px;
     padding: 15px;
-    width: 100%;
-    max-width: 60%;
+    margin-top: 0%;
+    width:  200px;
+    max-width: 900px;
+    object-fit: cover;  
+}
+img.col_picture{
+    padding: 0%;
+    margin: 0%;
 }
 .columns{
     column-count: 2;
