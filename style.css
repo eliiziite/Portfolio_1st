@@ -131,6 +131,7 @@ img{
     padding: 48px;
     width: 100%;
     max-width: 60%;
+    object-fit: cover;
     
     
 }
